@@ -45,4 +45,13 @@ public class DnaService {
     public DnaDTO save(DnaDTO dnaDTO){
         return mapper.toDnaDTO(dnaRepository.save(mapper.toDna(dnaDTO)));
     }
+
+    /**
+     * query all DNA from mutants or humans
+     * @param isMutant
+     * @return
+     */
+    public List<DnaDTO> findByIsMutant(boolean isMutant){
+        return mapper.toDnaDTOs(dnaRepository.findByIsMutant(isMutant));
+    }
 }

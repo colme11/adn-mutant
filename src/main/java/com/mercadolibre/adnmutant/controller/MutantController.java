@@ -1,21 +1,23 @@
 package com.mercadolibre.adnmutant.controller;
 
 import com.mercadolibre.adnmutant.service.DetectMutantService;
+import com.mercadolibre.adnmutant.service.StatsService;
 import com.mercadolibre.adnmutant.service.dto.DnaRequest;
+import com.mercadolibre.adnmutant.service.dto.StatsDTO;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MutantController {
 
     @Autowired
     private DetectMutantService detectMutantService;
+
+    @Autowired
+    private StatsService statsService;
 
     @RequestMapping(value = "/mutant", method = RequestMethod.POST, consumes = "application/json")
     @ApiOperation("validates whether a DNA belongs to a mutant or a human")
@@ -36,5 +38,12 @@ public class MutantController {
             }
         }
         return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body("invalid dna");
+    }
+
+    @GetMapping("/stats")
+    @ApiOperation("Generate a state of records between mutants and humans")
+    @ApiResponse(code = 200, message ="OK")
+    public ResponseEntity<StatsDTO> getStats(){
+        return new ResponseEntity<>(statsService.generateStatistics(), HttpStatus.OK);
     }
 }

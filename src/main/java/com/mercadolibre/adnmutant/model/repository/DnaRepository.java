@@ -30,4 +30,9 @@ public class DnaRepository implements IDnaRepository{
     public Dna save(Dna dna) {
         return dnaCrudRepository.save(dna);
     }
+
+    @Override
+    public List<Dna> findByIsMutant(boolean isMutant) {
+        return dnaCrudRepository.findByIsMutant(isMutant);
+    }
 }

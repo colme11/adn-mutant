@@ -11,4 +11,6 @@ public interface IDnaRepository {
     List<Dna> findByDna(String dna);
 
     Dna save(Dna dna);
+
+    List<Dna> findByIsMutant(boolean isMutant);
 }
