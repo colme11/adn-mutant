@@ -1,10 +1,13 @@
 package com.mercadolibre.adnmutant.service.utils;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+@Component
 public class AdnUtil {
 
     private static final Predicate<String> MUTANT_DNA = s -> s.matches(".*(AAAA|TTTT|CCCC|GGGG).*");

@@ -9,10 +9,9 @@ public class Dna {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Basic(fetch = FetchType.LAZY)
-    @Lob
     private String dna;
 
+    @Column(name = "is_mutant")
     private Boolean isMutant;
 
     public Integer getId() {
