@@ -17,7 +17,7 @@ La aplicacion fue implementada con:
     - Mockito
  - swagger (Para documentar la API)
  
-## Coverage
+### Coverage
 
 ![coverage](utilREADME/Coverage.jpeg)
 
