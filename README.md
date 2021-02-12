@@ -55,5 +55,17 @@ La aplicacion fue implementada con:
     
     http://```direccion_IP```:8090/mercadolibre/api/swagger-ui.html
 
-## URL de la API Rest expuesta en Google App Engine
+## URL del API Rest expuesta en Amazon AWS
+
+#### POST
+
+	- http://ec2-54-90-87-136.compute-1.amazonaws.com/mercadolibre/api/mutant
+	
+#### GET
+
+	http://ec2-54-90-87-136.compute-1.amazonaws.com/mercadolibre/api/stats
+	
+#### Swagger
+
+	- http://ec2-54-90-87-136.compute-1.amazonaws.com/mercadolibre/api/swagger-ui.html#
 
