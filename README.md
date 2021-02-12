@@ -1,4 +1,4 @@
-# Recruiting Mutants
+# Reclutando mutantes
 ![Portada](utilREADME/PortadaMagnetoADN.jpg)
 
 ## Especificaciones
