@@ -20,7 +20,12 @@ La aplicacion fue implementada con:
 ## Coverage
 
 ![coverage](utilREADME/Coverage.jpeg)
-[Reporte](./utilREADME/Resumen de cobertura general/index.html)
+
+```sh
+    ##Reporte coverage
+	
+	//utilREADME/Resumen de cobertura general/index.html
+    ```
 
 ## Ejecución de la aplicación
 
