@@ -16,6 +16,10 @@ La aplicacion fue implementada con:
     - junit
     - Mockito
  - swagger (Para documentar la API)
+ 
+## Coverage
+
+![Test-Automáticos, Code coverage](utilREADME/Coverage.jpg)
 
 ## Ejecución de la aplicación
 

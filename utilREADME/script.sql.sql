@@ -1,7 +1,6 @@
-CREATE TABLE `dna` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `dna` varchar(1000) NOT NULL,
-  `is_mutant` tinyint NOT NULL,
+CREATE TABLE `mutants`.`dna` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `dna` VARCHAR(1000) NOT NULL,
+  `is_mutant` TINYINT(1) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `dna_UNIQUE` (`dna`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+  UNIQUE INDEX `dna_UNIQUE` (`dna` ASC));
