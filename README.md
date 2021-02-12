@@ -19,7 +19,7 @@ La aplicacion fue implementada con:
  
 ## Coverage
 
-![Test-Automáticos, Code coverage](utilREADME/Coverage.jpg)
+![coverage](utilREADME/Coverage.jpg)
 
 ## Ejecución de la aplicación
 
