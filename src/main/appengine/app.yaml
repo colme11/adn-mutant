@@ -1,3 +1,0 @@
-runtime: java11
-entrypoint: java -Xmx64m -jar adn-mutant-0.0.1-SNAPSHOT.jar
-instance_class: F2
