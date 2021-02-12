@@ -21,7 +21,7 @@ La aplicacion fue implementada con:
 
 ![coverage](utilREADME/Coverage.jpeg)
 
-##Resumen de cobertura general
+## Resumen de cobertura general
 
 //utilREADME/Resumen de cobertura general/index.html
 
