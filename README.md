@@ -63,7 +63,7 @@ La aplicacion fue implementada con:
 	
 #### GET
 
-	http://ec2-54-90-87-136.compute-1.amazonaws.com/mercadolibre/api/stats
+	- http://ec2-54-90-87-136.compute-1.amazonaws.com/mercadolibre/api/stats
 	
 #### Swagger
 
