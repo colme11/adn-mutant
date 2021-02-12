@@ -19,7 +19,7 @@ La aplicacion fue implementada con:
  
 ## Coverage
 
-![coverage](/utilREADME/Coverage.png?raw=true)
+![coverage](utilREADME/Coverage.jpeg)
 
 ## Ejecución de la aplicación
 
