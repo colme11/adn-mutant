@@ -19,7 +19,7 @@ La aplicacion fue implementada con:
 
 ## Ejecución de la aplicación
 
-* La aplicacion esta expuesta en el repositorio de GitHub, el cual puede descargar de la siguiente ruta:   https://github.com/colme11/adn-mutant.git
+* La aplicación está expuesta en el repositorio de GitHub, el cual puede descargar de la siguiente ruta:   https://github.com/colme11/adn-mutant.git
 
 * correr el siguiente Script en su base de datos MySql: //utilREADME/script.sql
 
@@ -37,7 +37,7 @@ La aplicacion fue implementada con:
     mvn spring-boot:run
     ```
 
-    La aplicacion se despliega en el puerto 8090 con path=/mercadolibre/api. Para mayor informacion de la API, debe ingresar despues de desplegada la aplicacion a Swagger:
+    La aplicación se despliega en el puerto 8090 con path=/mercadolibre/api. Para mayor información de la API, debe ingresar después de desplegada la aplicación a Swagger:
     
     http://```direccion_IP```:8090/mercadolibre/api/swagger-ui.html
 
