@@ -21,7 +21,7 @@ La aplicacion fue implementada con:
 
 * La aplicacion esta expuesta en el repositorio de GitHub, el cual puede descargar de la siguiente ruta:   https://github.com/colme11/adn-mutant.git
 
-* correr el siguiente Script en su base de datos MySql: [Descargar sql (Archivo sql)](./utilREADME/script.sql).
+* correr el siguiente Script en su base de datos MySql: //utilREADME/script.sql
 
 * Modificar los parámetros de conexión a la base de datos según corresponda, el archivo a modificar es el archivo  application.properties
 
@@ -42,5 +42,4 @@ La aplicacion fue implementada con:
     http://```direccion_IP```:8090/mercadolibre/api/swagger-ui.html
 
 ## URL de la API Rest expuesta en Google App Engine
-
 
