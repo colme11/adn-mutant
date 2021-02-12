@@ -1,25 +1,31 @@
 package com.mercadolibre.adnmutant.service.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class StatsDTO {
 
-    private long count_mutant_dna;
-    private long count_human_dna;
+    @JsonProperty("count_mutant_dna")
+    private long countMutantDna;
+
+    @JsonProperty("count_human_dna")
+    private long countHumanDna;
+
     private double ratio;
 
-    public long getCount_mutant_dna() {
-        return count_mutant_dna;
+    public long getCountMutantDna() {
+        return countMutantDna;
     }
 
-    public void setCount_mutant_dna(long count_mutant_dna) {
-        this.count_mutant_dna = count_mutant_dna;
+    public void setCountMutantDna(long countMutantDna) {
+        this.countMutantDna = countMutantDna;
     }
 
-    public long getCount_human_dna() {
-        return count_human_dna;
+    public long getCountHumanDna() {
+        return countHumanDna;
     }
 
-    public void setCount_human_dna(long count_human_dna) {
-        this.count_human_dna = count_human_dna;
+    public void setCountHumanDna(long countHumanDna) {
+        this.countHumanDna = countHumanDna;
     }
 
     public double getRatio() {

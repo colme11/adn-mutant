@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface DnaCrudRepository extends CrudRepository<Dna, Integer> {
 
-    List<Dna> findByDna(String dna);
+    Dna findByDna(String dna);
 
     List<Dna> findByIsMutant(boolean isMutant);
 }

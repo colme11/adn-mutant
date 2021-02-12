@@ -28,7 +28,7 @@ public class MutantController {
     })
     public ResponseEntity<String> isMutant(
             @ApiParam(  value = "DNA to validate",
-                        required = true)
+                    required = true)
             @RequestBody DnaRequest dnaRequest) {
         if(detectMutantService.validateAdn(dnaRequest)){
             if (detectMutantService.isMutant(dnaRequest)) {

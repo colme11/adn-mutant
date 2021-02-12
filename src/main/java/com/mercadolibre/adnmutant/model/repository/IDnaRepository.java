@@ -8,7 +8,7 @@ public interface IDnaRepository {
 
     List<Dna> getAll();
 
-    List<Dna> findByDna(String dna);
+    Dna findByDna(String dna);
 
     Dna save(Dna dna);
 

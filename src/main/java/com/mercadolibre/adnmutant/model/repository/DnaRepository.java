@@ -22,7 +22,7 @@ public class DnaRepository implements IDnaRepository{
     }
 
     @Override
-    public List<Dna> findByDna(String dna) {
+    public Dna findByDna(String dna) {
         return dnaCrudRepository.findByDna(dna);
     }
 

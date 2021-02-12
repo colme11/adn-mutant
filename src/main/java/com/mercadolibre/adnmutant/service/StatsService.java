@@ -4,9 +4,6 @@ import com.mercadolibre.adnmutant.service.dto.StatsDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @author Oscar Villarreal
- */
 @Service
 public class StatsService {
 
@@ -19,17 +16,17 @@ public class StatsService {
      */
     public StatsDTO generateStatistics(){
         StatsDTO statsDTO = new StatsDTO();
-        statsDTO.setCount_mutant_dna(dnaService.findByIsMutant(true).size());
-        statsDTO.setCount_human_dna(dnaService.findByIsMutant(false).size());
-        if (statsDTO.getCount_mutant_dna() <= 0 && statsDTO.getCount_human_dna() <= 0){
+        statsDTO.setCountMutantDna(dnaService.findByIsMutant(true).size());
+        statsDTO.setCountHumanDna(dnaService.findByIsMutant(false).size());
+        if (statsDTO.getCountMutantDna() <= 0 && statsDTO.getCountHumanDna() <= 0){
             statsDTO.setRatio(0);
             return statsDTO;
         }
-        if (statsDTO.getCount_human_dna() == 0){
+        if (statsDTO.getCountHumanDna() == 0){
             statsDTO.setRatio(1);
             return statsDTO;
         }
-        statsDTO.setRatio(statsDTO.getCount_mutant_dna() / statsDTO.getCount_human_dna());
+        statsDTO.setRatio(statsDTO.getCountMutantDna() / statsDTO.getCountHumanDna());
         return statsDTO;
     }
 }

@@ -8,9 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author Oscar Villarreal
- */
 @Service
 public class DnaService {
 
@@ -33,8 +30,8 @@ public class DnaService {
      * @param dna
      * @return
      */
-    public List<DnaDTO> findByDna(String dna){
-        return mapper.toDnaDTOs(dnaRepository.findByDna(dna));
+    public DnaDTO findByDna(String dna){
+        return mapper.toDnaDTO(dnaRepository.findByDna(dna));
     }
 
     /**

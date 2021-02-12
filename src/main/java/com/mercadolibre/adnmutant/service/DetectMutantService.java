@@ -6,11 +6,6 @@ import com.mercadolibre.adnmutant.service.utils.AdnUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
-/**
- * @author Oscar Villarreal
- */
 @Service
 public class DetectMutantService {
 
@@ -36,8 +31,8 @@ public class DetectMutantService {
      */
     public boolean isMutant(DnaRequest dna){
         String strDna = String.join(",", dna.getDna());
-        List<DnaDTO> dnaResponse = dnaService.findByDna(strDna);
-        if(dnaResponse.isEmpty()){
+        DnaDTO dnaResponse = dnaService.findByDna(strDna);
+        if(dnaResponse==null){
             boolean dnaMutant = adnUtil.validateIsMutant(dna.getDna());
             DnaDTO dnaDTO = new DnaDTO();
             dnaDTO.setDnaPerson(strDna);
@@ -45,7 +40,7 @@ public class DetectMutantService {
             dnaDTO = dnaService.save(dnaDTO);
             return dnaDTO.getMutant();
         }
-        return dnaResponse.get(0).getMutant();
+        return dnaResponse.getMutant();
     }
 
 
