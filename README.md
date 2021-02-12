@@ -27,10 +27,11 @@ La aplicacion fue implementada con:
 
     ```sh
     //adn-mutant/src/main/resources/application.properties
-    ```
-    spring.datasource.url=jdbc:mysql://```direccion_IP```:3306/```schema_de_la_base_de_datos```
+	
+	spring.datasource.url=jdbc:mysql://```direccion_IP```:3306/```schema_de_la_base_de_datos```
     spring.datasource.username=```usuario_base_datos```
     spring.datasource.password=```contraseña_base_datos```
+    ```
 
 * Ejecutar aplicacion
     ```diff
