@@ -21,16 +21,21 @@ La aplicacion fue implementada con:
 
 * La aplicación está expuesta en el repositorio de GitHub, el cual puede descargar de la siguiente ruta:   https://github.com/colme11/adn-mutant.git
 
-* correr el siguiente Script en su base de datos MySql: //utilREADME/script.sql
+* correr el siguiente Script en su base de datos MySql:
+
+	```sh
+    //utilREADME/script.sql
+    ```
+
 
 * Modificar los parámetros de conexión a la base de datos según corresponda, el archivo a modificar es el archivo  application.properties
 
     ```sh
     //adn-mutant/src/main/resources/application.properties
 	
-	spring.datasource.url=jdbc:mysql://```direccion_IP```:3306/```schema_de_la_base_de_datos```
-    spring.datasource.username=```usuario_base_datos```
-    spring.datasource.password=```contraseña_base_datos```
+	spring.datasource.url=jdbc:mysql://direccion_IP:3306/schema_de_la_base_de_datos
+    spring.datasource.username=usuario_base_datos
+    spring.datasource.password=contraseña_base_datos
     ```
 
 * Ejecutar aplicacion
