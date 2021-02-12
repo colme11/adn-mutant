@@ -1,0 +1,72 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: DnaMapper</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.mercadolibre.adnmutant.service.mapper</a> ]
+</div>
+
+<h1>Coverage Summary for Class: DnaMapper (com.mercadolibre.adnmutant.service.mapper)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">DnaMapper</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.mercadolibre.adnmutant.service.mapper;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.mercadolibre.adnmutant.model.entity.Dna;
+<i>4</i>&nbsp;import com.mercadolibre.adnmutant.service.dto.DnaDTO;
+<i>5</i>&nbsp;import org.mapstruct.InheritInverseConfiguration;
+<i>6</i>&nbsp;import org.mapstruct.Mapper;
+<i>7</i>&nbsp;import org.mapstruct.Mapping;
+<i>8</i>&nbsp;import org.mapstruct.Mappings;
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;import java.util.List;
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;@Mapper(componentModel = &quot;spring&quot;)
+<i>13</i>&nbsp;public interface DnaMapper {
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;    @Mappings({
+<i>16</i>&nbsp;            @Mapping(source = &quot;id&quot;, target = &quot;idDna&quot;),
+<i>17</i>&nbsp;            @Mapping(source = &quot;dna&quot;, target = &quot;dnaPerson&quot;)
+<i>18</i>&nbsp;    })
+<i>19</i>&nbsp;    DnaDTO toDnaDTO(Dna dna);
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    @InheritInverseConfiguration
+<i>22</i>&nbsp;    Dna toDna(DnaDTO dnaDTO);
+<i>23</i>&nbsp;
+<i>24</i>&nbsp;    List&lt;DnaDTO&gt; toDnaDTOs(List&lt;Dna&gt; dnaList);
+<i>25</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-02-12 12:08</div>
+</div>
+</body>
+</html>

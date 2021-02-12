@@ -1,0 +1,137 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: DnaService</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.mercadolibre.adnmutant.service</a> ]
+</div>
+
+<h1>Coverage Summary for Class: DnaService (com.mercadolibre.adnmutant.service)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">DnaService</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (3/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (3/ 5)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.mercadolibre.adnmutant.service;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import com.mercadolibre.adnmutant.model.repository.IDnaRepository;
+<i>4</i>&nbsp;import com.mercadolibre.adnmutant.service.dto.DnaDTO;
+<i>5</i>&nbsp;import com.mercadolibre.adnmutant.service.mapper.DnaMapper;
+<i>6</i>&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+<i>7</i>&nbsp;import org.springframework.stereotype.Service;
+<i>8</i>&nbsp;
+<i>9</i>&nbsp;import java.util.List;
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;@Service
+<b class="fc"><i>12</i>&nbsp;public class DnaService {</b>
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    @Autowired
+<i>15</i>&nbsp;    private IDnaRepository dnaRepository;
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;    @Autowired
+<i>18</i>&nbsp;    private DnaMapper mapper;
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;    /**
+<i>21</i>&nbsp;     * consult all DNAs
+<i>22</i>&nbsp;     * @return
+<i>23</i>&nbsp;     */
+<i>24</i>&nbsp;    public List&lt;DnaDTO&gt; getAll(){
+<b class="nc"><i>25</i>&nbsp;        return mapper.toDnaDTOs(dnaRepository.getAll());</b>
+<i>26</i>&nbsp;    }
+<i>27</i>&nbsp;
+<i>28</i>&nbsp;    /**
+<i>29</i>&nbsp;     * consult a DNA
+<i>30</i>&nbsp;     * @param dna
+<i>31</i>&nbsp;     * @return
+<i>32</i>&nbsp;     */
+<i>33</i>&nbsp;    public DnaDTO findByDna(String dna){
+<b class="fc"><i>34</i>&nbsp;        return mapper.toDnaDTO(dnaRepository.findByDna(dna));</b>
+<i>35</i>&nbsp;    }
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;    /**
+<i>38</i>&nbsp;     * Create a new dna record
+<i>39</i>&nbsp;     * @param dnaDTO
+<i>40</i>&nbsp;     * @return
+<i>41</i>&nbsp;     */
+<i>42</i>&nbsp;    public DnaDTO save(DnaDTO dnaDTO){
+<b class="nc"><i>43</i>&nbsp;        return mapper.toDnaDTO(dnaRepository.save(mapper.toDna(dnaDTO)));</b>
+<i>44</i>&nbsp;    }
+<i>45</i>&nbsp;
+<i>46</i>&nbsp;    /**
+<i>47</i>&nbsp;     * query all DNA from mutants or humans
+<i>48</i>&nbsp;     * @param isMutant
+<i>49</i>&nbsp;     * @return
+<i>50</i>&nbsp;     */
+<i>51</i>&nbsp;    public List&lt;DnaDTO&gt; findByIsMutant(boolean isMutant){
+<b class="fc"><i>52</i>&nbsp;        return mapper.toDnaDTOs(dnaRepository.findByIsMutant(isMutant));</b>
+<i>53</i>&nbsp;    }
+<i>54</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-02-12 12:08</div>
+</div>
+</body>
+</html>

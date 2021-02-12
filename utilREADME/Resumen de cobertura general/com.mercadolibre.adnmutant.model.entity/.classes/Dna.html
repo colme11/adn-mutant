@@ -1,0 +1,133 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Dna</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.mercadolibre.adnmutant.model.entity</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Dna (com.mercadolibre.adnmutant.model.entity)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Dna</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/ 10)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Dna$HibernateProxy$uGbF1X2m</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (10/ 10)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.mercadolibre.adnmutant.model.entity;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import javax.persistence.*;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;@Entity
+<b class="fc"><i>6</i>&nbsp;public class Dna {</b>
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;    @Id
+<i>9</i>&nbsp;    @GeneratedValue(strategy = GenerationType.IDENTITY)
+<i>10</i>&nbsp;    private Integer id;
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;    private String dna;
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;    @Column(name = &quot;is_mutant&quot;)
+<i>15</i>&nbsp;    private Boolean isMutant;
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;    public Integer getId() {
+<b class="fc"><i>18</i>&nbsp;        return id;</b>
+<i>19</i>&nbsp;    }
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;    public void setId(Integer id) {
+<b class="fc"><i>22</i>&nbsp;        this.id = id;</b>
+<b class="fc"><i>23</i>&nbsp;    }</b>
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;    public String getDna() {
+<b class="fc"><i>26</i>&nbsp;        return dna;</b>
+<i>27</i>&nbsp;    }
+<i>28</i>&nbsp;
+<i>29</i>&nbsp;    public void setDna(String dna) {
+<b class="fc"><i>30</i>&nbsp;        this.dna = dna;</b>
+<b class="fc"><i>31</i>&nbsp;    }</b>
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    public Boolean getMutant() {
+<b class="fc"><i>34</i>&nbsp;        return isMutant;</b>
+<i>35</i>&nbsp;    }
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;    public void setMutant(Boolean mutant) {
+<b class="fc"><i>38</i>&nbsp;        isMutant = mutant;</b>
+<b class="fc"><i>39</i>&nbsp;    }</b>
+<i>40</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-02-12 12:08</div>
+</div>
+</body>
+</html>
