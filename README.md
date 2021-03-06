@@ -59,13 +59,13 @@ La aplicacion fue implementada con:
 
 #### POST
 
-	- http://ec2-18-216-119-178.us-east-2.compute.amazonaws.com/mercadolibre/api/mutant
+http://ec2-18-216-119-178.us-east-2.compute.amazonaws.com/mercadolibre/api/mutant
 	
 #### GET
 
-	- http://ec2-18-216-119-178.us-east-2.compute.amazonaws.com/mercadolibre/api/stats
+http://ec2-18-216-119-178.us-east-2.compute.amazonaws.com/mercadolibre/api/stats
 	
 #### Swagger
 
-	- http://ec2-18-216-119-178.us-east-2.compute.amazonaws.com/mercadolibre/api/swagger-ui.html#/mutant-controller
+http://ec2-18-216-119-178.us-east-2.compute.amazonaws.com/mercadolibre/api/swagger-ui.html#/mutant-controller
 
